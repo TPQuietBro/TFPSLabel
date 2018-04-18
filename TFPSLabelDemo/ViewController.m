@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "TFPSLabel.h"
-#import "YYCache.h"
+
 @interface ViewController ()
 
 @end
@@ -30,16 +30,8 @@
     label.backgroundColor = [UIColor redColor];
     [self.view addSubview:label];
     
-    NSArray *array = @[@"1",@"1",@"1",@"1"];
-    
-    YYCache *cache = [YYCache cacheWithName:@"allen"];
-    [cache setObject:array forKey:@"123"];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    YYCache *cache = [YYCache cacheWithName:@"allen"];
-    NSLog(@"%@",[cache objectForKey:@"123"]);
-}
 
 
 @end
