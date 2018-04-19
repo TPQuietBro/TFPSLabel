@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0F287F208837C10015F217 /* UIViewController+FPS.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0F287E208837C10015F217 /* UIViewController+FPS.m */; };
+		AF0F2882208839CE0015F217 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0F2880208839CE0015F217 /* NSObject+Swizzling.m */; };
 		D7C33F8F2087997100986D6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C33F8E2087997100986D6F /* AppDelegate.m */; };
 		D7C33F922087997100986D6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C33F912087997100986D6F /* ViewController.m */; };
 		D7C33F952087997100986D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C33F932087997100986D6F /* Main.storyboard */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF0F287D208837C10015F217 /* UIViewController+FPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FPS.h"; sourceTree = "<group>"; };
+		AF0F287E208837C10015F217 /* UIViewController+FPS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FPS.m"; sourceTree = "<group>"; };
+		AF0F2880208839CE0015F217 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		AF0F2881208839CE0015F217 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
 		D7C33F8A2087997100986D6F /* TFPSLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFPSLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C33F8D2087997100986D6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7C33F8E2087997100986D6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +86,10 @@
 			children = (
 				D7C33FA42087999A00986D6F /* TFPSLabel.h */,
 				D7C33FA52087999A00986D6F /* TFPSLabel.m */,
+				AF0F2881208839CE0015F217 /* NSObject+Swizzling.h */,
+				AF0F2880208839CE0015F217 /* NSObject+Swizzling.m */,
+				AF0F287D208837C10015F217 /* UIViewController+FPS.h */,
+				AF0F287E208837C10015F217 /* UIViewController+FPS.m */,
 			);
 			path = TPFPSLabel;
 			sourceTree = "<group>";
@@ -155,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0F287F208837C10015F217 /* UIViewController+FPS.m in Sources */,
+				AF0F2882208839CE0015F217 /* NSObject+Swizzling.m in Sources */,
 				D7C33F922087997100986D6F /* ViewController.m in Sources */,
 				D7C33F9D2087997100986D6F /* main.m in Sources */,
 				D7C33F8F2087997100986D6F /* AppDelegate.m in Sources */,
@@ -295,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2R35TK7Z95;
 				INFOPLIST_FILE = TFPSLabelDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tp.TFPSLabelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2R35TK7Z95;
 				INFOPLIST_FILE = TFPSLabelDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tp.TFPSLabelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
