@@ -16,7 +16,7 @@
 }
 - (void)showFpsLabel{
     self.t_fpsLabel = [[TFPSLabel alloc] init];
-    self.t_fpsLabel.frame = CGRectMake(0, 10, 70, 25);
+    self.t_fpsLabel.frame = CGRectMake(0, 100, 70, 25);
     self.t_fpsLabel.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.t_fpsLabel];
 }
